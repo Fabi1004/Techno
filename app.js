@@ -79,7 +79,7 @@ const vm = new Vue({
       }
     },
     compararEstoque() {
-      const items = this.carrinho.filter(({ id }) => id === produto.id);
+      const items = this.carrinho.filter(({ id }) => id === this.produto.id);
       this.produto.estoque -= items.length;
     },
   },
